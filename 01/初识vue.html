@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+ <!-- 引入VUE -->
+  <script src="./vue.js"></script>
+</head>
+<body>
+  <div id="root"> 
+    <h1>{{name}}</h1>
+    <h1>hello 你妈逼个 kitty</h1>
+  </div>
+
+<script type="text/javascript">
+    Vue.config.productionTip = false//阻止 vue 在启动时产生的提示
+
+    const x = new Vue({
+      el : '#root',//el用于指定 当前vue实例为哪个容器服务，值通常为css选择器字符串
+      data :{
+        name : 'hellokitty',
+        
+      }
+    });
+
+    
+  </script>
+</body>
+</html>
